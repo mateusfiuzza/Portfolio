@@ -51,7 +51,6 @@ ul li:hover ul.dropdown {
 body{
     background: rgb(0, 0, 0) ;
     color: rgb(243, 243, 243);
-    font-family: "Press Start 2P", system-ui;
     font-weight: 400%;
     font-style: normal;
 }
@@ -71,7 +70,7 @@ body{
 }
 
 .name{
-    margin: ;
+    /* margin: ; */
     
 }
 
@@ -101,18 +100,35 @@ border-color: rgb(101, 79, 129);
     background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%, rgb(0, 0, 0) 50%);
     margin: auto;
     padding-right: 5% ;
-    padding-left: 5%;
+    padding-left: 5%;    
+    
 
 }
-.sobre:hover{
 
-    background: linear-gradient( rgb(255, 255, 255) 5%, rgb(255, 0, 0) 20%, rgb(42, 0, 253) 90%);
+.sobre, .ptittle {
+    background: linear-gradient(to right, #bc13e7, rgb(255, 255, 255), rgb(3, 3, 3));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 1.5s ease-in-out;
+    background-clip: text;
+}
+
+.sobre:hover, .ptittle:hover{
+    background-size: 100% 100%;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    transition:  background-size 1s ease-in-out;
 }
+
+
+
+
+
+
+
 .bio{
+    
     margin-left: 0%;
     background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(227, 221, 221) 5%, rgb(213, 208, 208) 70%);
     padding-top: 2%;
@@ -127,10 +143,9 @@ border-color: rgb(101, 79, 129);
 .eumesmo{
     display:flex;
     justify-content:space-between;
-    flex-wrap: wrap;
     margin-left: 7%;
     margin-top: 5%;
-    margin-right: 1%;
+    padding-right: 1%;
     background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 5%, rgb(233, 233, 233) 70%);
     padding-bottom: 0%;
     font-size: 150% ;
@@ -138,11 +153,27 @@ border-color: rgb(101, 79, 129);
     -webkit-text-fill-color: transparent;
 }
 
-.unj{
-margin-left: 5%;
+.biografia{
 
-position: unset;
-margin-top: 0%;}
+    width: 70%;
+
+
+}
+
+#unj{
+    filter: contrast(150%) drop-shadow(0px 0px 0px transparent) drop-shadow(0px 0px 0px transparent);
+
+    transition: all 5s ease-in-out;
+}
+
+
+#unj:hover{
+   filter: drop-shadow( -4px 5px 5px rgb(230, 9, 9))  drop-shadow( 10px 5px 10px rgb(9, 31, 230));
+   transition: all 5s ease-in-out;
+}   
+
+
+
 
 .pag3{
     background: linear-gradient( rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgb(22, 22, 22) 70%);
@@ -158,20 +189,36 @@ margin-top: 0%;}
     border: 1% solid white;
     display: flex;
     justify-content: center;
-
+    text-align: center;
+    
 }
 
 .img{
 background: linear-gradient( rgb(255, 255, 255) 0%, rgb(0, 0, 0) 0%, rgb(62, 16, 97) 70%);
     border: #5900ff solid;
-    padding-left: 10%;
+    padding-left: 0%;
     width:500% ;
-    padding-right: 20%;
+   
 }
 
-.ptittle{
+#JDM{
+    border: #5900ff solid 0.1vh;
+    width: 90%;
+
+}
+
+#tech{
+    border: #5900ff solid 0.1vh;
+    width:95%;
+    height: 98%;
+}
+
+
+/* .ptittle{
+   
     font-size: 350%;
-   text-align: center;
+   text-align: justify;
+    padding-left: 1%;
    background: linear-gradient( rgb(136, 136, 136) 0%, rgb(0, 0, 0) 20%, rgb(255, 255, 255) 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -180,32 +227,151 @@ background: linear-gradient( rgb(255, 255, 255) 0%, rgb(0, 0, 0) 0%, rgb(62, 16,
 
 .ptittle:hover{
     font-size: 350%;
-   text-align: center;
-   background: linear-gradient( rgb(255, 255, 255) 0%, rgb(0, 0, 0) 20%, rgb(143, 0, 253) 70%);
+    padding-left: 1%;
+   background: linear-gradient( rgb(255, 255, 255) 0%, rgb(143, 0, 253) 20%, rgb(0, 0, 0) 110%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 
 
 .contato {
 
     font-size: 250%;
     padding-bottom: 0%;
+}
 
+.contato:hover {
+
+    font-size: 250%;
+    padding-bottom: 0%;
+    background: linear-gradient( rgb(140, 140, 140) 0%, rgb(126, 126, 126) 20%, rgb(255, 255, 255) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.2s; 
+}
+
+.icones{
+
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.im4{
+    text-align: center;
 }
 
 .img4{
+    
 
-text-align: center;
- 
-
+    transition: transform 0.5s ease-in-out; 
+    
+   
 }
 
 .img4:hover{
 
-    text-align: center;
-    width: 50%;
-        -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
     
+    transform: scale(1.5);
+    filter: brightness(0) saturate(100%) invert(14%) sepia(100%) saturate(7460%) hue-rotate(271deg) brightness(100%) contrast(2055%);
+    
+
+}
+
+img4:active{
+    transform: scale(1.5);
+    transform-origin: center; 
+    
+     filter: brightness(0) saturate(100%) invert(14%) sepia(100%) saturate(7460%) hue-rotate(271deg) brightness(100%) contrast(2055%);
+    
+
+}
+
+
+
+.im4 a{
+    width: 100%;
+    background: rgb(188, 19, 231);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 1.5s ease-in-out;
+    background-clip: text;
+}    
+
+.im4 a:hover{
+    background-color: yellow;
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    transition:  background-size 1s ease-in-out;
+}
+
+
+@media (max-width: 574px) {
+    
+    body{
+        margin-right: 0%;
+
+
+    }
+  
+
+    .img{
+        width: 40%;
+        transition: 0.2s; 
+
+    }
+
+
+
+    .eumesmo{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .biografia{
+
+        width: 90%;
+    
+    
+    }
+
+    .unj{
+
+        margin: 0%;
+        
+
+    }
+
+
+
+    .projetos{
+        display: flex;
+        flex-direction:column ;
+       
+        margin-left: 0%;
+        justify-content: start;
+        margin-right: 0%;
+  }    
+  
+  #JDM{
+
+    width: 248%;
+        
+    }
+
+    #tech{
+
+        width: 248%;
+        
+    }
+
+
+
+  }     
+
+
+
