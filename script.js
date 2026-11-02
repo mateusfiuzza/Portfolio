@@ -1,3 +1,3 @@
 function manutencao(){
-    window.document.alert('Funcionalidade ainda está em produção!')
+    window.alert('Funcionalidade ainda está em produção!')
 }
