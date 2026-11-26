@@ -70,7 +70,7 @@ body{
 }
 
 .name{
-    margin: ;
+    /* margin: ; */
     
 }
 
@@ -174,7 +174,6 @@ border-color: rgb(101, 79, 129);
 
 
 
-margin-top: 0%;}
 
 .pag3{
     background: linear-gradient( rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%, rgb(22, 22, 22) 70%);
@@ -289,7 +288,7 @@ img4:active{
 
 }
 
-}
+
 
 .im4 a{
     width: 100%;
